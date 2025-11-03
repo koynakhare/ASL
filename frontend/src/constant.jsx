@@ -1,0 +1,18 @@
+export const UserApiUrl='users'
+export const CartApiUrl='carts'
+export const LearnApiUrl='signs'
+export const TestApiUrl='tests'
+export const BookApiUrl='books'
+export const OrderApiUrl='orders'
+export const ResultApiUrl='result'
+
+
+export const HomePageUrl='/'
+export const ReportPageUrl='/report'
+export const AboutPageUrl='/about'
+export const ContactPageUrl='/contact'
+export const UserPageUrl='/users'
+export const LearnPageUrl='/learn'
+export const TestPageUrl='/test'
+export const ResultPageUrl='/result'
+export const HistoryPageUrl='/history'
