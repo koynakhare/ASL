@@ -1,5 +1,6 @@
 import { getAllTestsService, submitTestService } from "../services/test.service.js";
-import { apiHandler, sendSuccess } from "../utils/responseHandler.js";
+import { apiHandler } from "../utils/apiHandler.js";
+import { sendSuccess } from "../utils/successHandler.js";
 
 /**
  * Submit a new test with attempts

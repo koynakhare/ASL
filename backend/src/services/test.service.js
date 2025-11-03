@@ -1,7 +1,6 @@
-import { Test } from "../models/Test.js";
-import { TestAttempt } from "../models/TestAttempt.js";
-import { Sign } from "../models/Sign.js";
-import { config } from "../config/config.js";
+import { Test } from "../models/test.model.js";
+import { TestAttempt } from "../models/testAttempt.model.js";
+import { config } from "../config/index.js";
 
 export async function submitTestService(userId, data) {
   const newTest = await Test.create({ user: userId });
@@ -22,6 +21,7 @@ export async function submitTestService(userId, data) {
 }
 
 export async function getAllTestsService(userId) {
+  console.log("dfjdskfsdk")
   const tests = await Test.find({ user: userId })
     .sort({ created_at: -1 })
     .populate({
