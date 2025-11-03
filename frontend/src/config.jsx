@@ -1,1 +1,1 @@
-export const base_url = '/api/'
+export const base_url = 'https://asl-2.onrender.com/api/'
