@@ -1,4 +1,4 @@
-export const UserApiUrl='users'
+export const UserApiUrl='auth'
 export const CartApiUrl='carts'
 export const LearnApiUrl='sign'
 export const TestApiUrl='tests'
