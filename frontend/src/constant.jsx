@@ -1,6 +1,6 @@
 export const UserApiUrl='users'
 export const CartApiUrl='carts'
-export const LearnApiUrl='signs'
+export const LearnApiUrl='sign'
 export const TestApiUrl='tests'
 export const BookApiUrl='books'
 export const OrderApiUrl='orders'

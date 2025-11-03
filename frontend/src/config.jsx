@@ -1,1 +1,1 @@
-export const base_url = 'https://asl-backend-hrj3.onrender.com/api/v1/'
+export const base_url = import.meta.env.VITE_BASE_URL;
