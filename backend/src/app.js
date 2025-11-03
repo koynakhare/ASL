@@ -14,13 +14,12 @@ const app = express();
 
 // Middlewares
 app.use(express.json());
-app.use(cors({ origin: "*"}));
-
+app.use(cors({ origin: "*" }));
 app.use(helmet());
 app.use(morgan("dev"));
 
-// Serve static files (images/assets)
-app.use("/images", express.static(path.join(__dirname, "public/images")));
+// ✅ Serve static images (corrected path)
+app.use("/images", express.static(path.join(__dirname, "../public/images")));
 
 // API Routes
 app.use("/api", router);
