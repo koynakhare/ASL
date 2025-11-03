@@ -8,6 +8,7 @@ const router = express.Router();
 
 router.use("/auth", authRoutes);
 router.use("/user",protect, userRoutes);
-router.use("/sign",protect, signRoutes);
+router.use("/sign", signRoutes);
+router.use("/test",protect, signRoutes);
 
 export default router;
