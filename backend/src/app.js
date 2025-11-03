@@ -15,10 +15,14 @@ const app = express();
 // Middlewares
 app.use(express.json());
 app.use(cors({ origin: "*" }));
-app.use(helmet());
+app.use(
+  helmet({
+    crossOriginResourcePolicy: false, // ✅ FIX: Allow serving images cross-origin
+  })
+);
 app.use(morgan("dev"));
 
-// ✅ Serve static images (corrected path)
+// ✅ Serve static images
 app.use("/images", express.static(path.join(__dirname, "../public/images")));
 
 // API Routes
