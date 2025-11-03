@@ -1,0 +1,92 @@
+[
+  {
+    "sign_id": "1",
+    "name": "Baby",
+    "description": "Sign representing a baby or infant.",
+    "meaning": "Baby",
+    "usage": "Used to talk about a baby.",
+    "instruction": "Cradle your hands as if holding a baby.",
+    "image_path": "/images/baby.jpg"
+  },
+  {
+    "sign_id": "2",
+    "name": "Bye",
+    "description": "A sign for saying goodbye.",
+    "meaning": "Bye",
+    "usage": "Used when leaving or ending a conversation.",
+    "instruction": "Wave your hand back and forth.",
+    "image_path": "/images/bye.jpg"
+  },
+  {
+    "sign_id": "3",
+    "name": "Child",
+    "description": "Sign for child or kid.",
+    "meaning": "Child",
+    "usage": "Used when referring to a child.",
+    "instruction": "Place both hands in front of you, patting downward.",
+    "image_path": "/images/child.jpg"
+  },
+  {
+    "sign_id": "4",
+    "name": "Cigarette",
+    "description": "Sign representing a cigarette.",
+    "meaning": "Cigarette",
+    "usage": "Used to refer to smoking or cigarettes.",
+    "instruction": "Hold your fingers as if holding a cigarette and bring it near your mouth.",
+    "image_path": "/images/ciggarate.jpg"
+  },
+  {
+    "sign_id": "5",
+    "name": "Cloth",
+    "description": "Sign for cloth or fabric.",
+    "meaning": "Cloth",
+    "usage": "Used when referring to fabric or cloth.",
+    "instruction": "Rub your fingers together as if smoothing fabric.",
+    "image_path": "/images/cloth.jpg"
+  },
+  {
+    "sign_id": "6",
+    "name": "Drink",
+    "description": "Sign for drinking.",
+    "meaning": "Drink",
+    "usage": "Used when talking about drinking liquids.",
+    "instruction": "Pretend to hold a cup and bring it to your mouth.",
+    "image_path": "/images/drink.jpg"
+  },
+  {
+    "sign_id": "7",
+    "name": "Food",
+    "description": "Sign for food or eating.",
+    "meaning": "Food",
+    "usage": "Used when talking about food.",
+    "instruction": "Bring fingers to your mouth as if eating.",
+    "image_path": "/images/food.jpg"
+  },
+  {
+    "sign_id": "8",
+    "name": "Hi",
+    "description": "A casual greeting sign.",
+    "meaning": "Hi",
+    "usage": "Used to greet someone casually.",
+    "instruction": "Wave your hand with fingers spread.",
+    "image_path": "/images/hi.jpg"
+  },
+  {
+    "sign_id": "9",
+    "name": "Say",
+    "description": "Sign for speaking or saying.",
+    "meaning": "Say",
+    "usage": "Used when referring to saying something.",
+    "instruction": "Point finger from mouth outward.",
+    "image_path": "/images/say.jpg"
+  },
+  {
+    "sign_id": "10",
+    "name": "Thirsty",
+    "description": "Sign for feeling thirsty.",
+    "meaning": "Thirsty",
+    "usage": "Used to indicate needing a drink.",
+    "instruction": "Draw finger down your throat as if indicating thirst.",
+    "image_path": "/images/thirsty.jpg"
+  }
+]
