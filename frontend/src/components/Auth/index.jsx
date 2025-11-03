@@ -16,7 +16,7 @@ const AuthPopup = ({ authPopup, setAuthPopup }) => {
   const activeSchema = useMemo(() => (isLogin ? schemas.login : schemas.register), [isLogin]);
   const formMethods = useForm({
     resolver: yupResolver(activeSchema), defaultValues: {
-      username: '',
+      name: '',
       email: '',
       password: "",
       confirmPassword: ''
@@ -26,9 +26,9 @@ const AuthPopup = ({ authPopup, setAuthPopup }) => {
 
   const onSubmit = async (data) => {
     const action = isLogin ? loginUserAction : registerUserAction;
-    const { confirmPassword, ...userData } = data;
+    const { confirmPassword,name, ...userData } = data;
 
-    const response = await dispatch(action(userData));
+    const response = await dispatch(action(isLogin?userData:{...userData,name}));
 
     if (response?.payload?.success) {
       reset();

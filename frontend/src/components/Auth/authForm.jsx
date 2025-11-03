@@ -8,7 +8,7 @@ const AuthForm = ({ isLogin, onSubmit, formMethods, loading }) => {
   } = formMethods;
 
   const fields = [
-    !isLogin && { name: "username", placeholder: "Full Name" },
+    !isLogin && { name: "name", placeholder: "Full Name" },
     { name: "email", type: "email", placeholder: "Email" },
     { name: "password", type: "password", placeholder: "Password" },
     !isLogin && {
