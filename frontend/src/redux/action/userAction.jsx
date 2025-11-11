@@ -11,18 +11,18 @@ const getUserApiUrl = (endPoints) => {
 }
 
 export const registerUserApi = async (data, dispatch) => {
-  const response = await postRequest(getUserApiUrl('register'), data);
+  const response = await postRequest(getUserApiUrl('register'), data, false, dispatch);
   return response.data;
 };
 
 export const loginUserApi = async (data, dispatch) => {
-  const response = await postRequest(getUserApiUrl('login'), data);
+  const response = await postRequest(getUserApiUrl('login'), data, false, dispatch);
   if (response) {
-   
+
     let { data, message, success } = response?.data || {}
     if (success) {
-      setItemToLocalStorage('token', data)
-      dispatch(storeToken(data))
+      setItemToLocalStorage('token', data?.token)
+      dispatch(storeToken(data?.token))
     }
   }
   return response.data;

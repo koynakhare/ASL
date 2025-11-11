@@ -7,7 +7,7 @@ const getResultApiUrl = (endPoints) => {
 }
 
 export const getResult = async (data, dispatch) => {
-  // const response = await getRequest(getResultApiUrl('get'), data);
+  // const response = await getRequest(getResultApiUrl('get'), data,true, dispatch);
   // return response?.data;
   return {
     success: true,

@@ -15,13 +15,10 @@ export const handleAsyncAction = (actionType, apiFn,apiType) => {
         if (success) {
           return { success: true, data: responseData };
         } else {
-          console.log(error,'---------')
           handleError(dispatch, { success, message, error: error || !success, apiType });
           return { success: false, data: [], message, error };
         }
       } catch (error) {
-          console.log(error,'---------')
-
         const errorMessage = error?.message || (typeof error === 'string' && error) || 'Something went wrong'
         handleError(
           dispatch,

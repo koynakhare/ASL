@@ -16,13 +16,14 @@ const getTestApiUrl = (endPoints) => {
 }
 
 export const getTestQuestions = async (data, dispatch) => {
-  const response = await getRequest(TestApiUrl, data);
+  const response = await getRequest(TestApiUrl, data,true,dispatch);
+  console.log(response,'response')
   return response?.data;
 
 };
 
 export const submitTest = async (data, dispatch) => {
-  const response = await postRequest(TestApiUrl, data);
+  const response = await postRequest(TestApiUrl, data,true,dispatch);
   return response?.data;
 
 };

@@ -15,7 +15,7 @@ const service = (config, includeToken = true, dispatch, contentType) => {
   if (includeToken) {
     config.headers = {
       ...config.headers, // Preserve existing headers
-      Authorization: `Bearer ${token}`,
+      Authorization: token,
     };
   }
 
@@ -46,14 +46,12 @@ export const handleErrors = async (error, dispatch) => {
   }
 
   const { response, request, message, data } = error;
-
   if (response) {
     // The request was made and the server responded with a status code
-    const { status, data } = response;
+    const { status, data ,error} = response;
     if (status === 401) {
-      // showAlert(dispatch, false, 'Unauthorized access', true);
-      dispatch(notification(success, 'Unauthorized access', false));
-      await logoutUser(dispatch);
+      dispatch(notification(false, 'Unauthorized access', true));
+      // await logoutUser(dispatch);
 
       return Promise.reject({ data: data } || 'Unauthorized access');
     } else if (status === 404) {

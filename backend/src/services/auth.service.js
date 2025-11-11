@@ -18,10 +18,10 @@ export const registerUser = async ({ name, email, password }) => {
 
 export const loginUser = async ({ email, password }) => {
   const user = await User.findOne({ email }).select("+password");
-  if (!user) throw new AppError("Invalid credentials", 401);
+  if (!user) throw new AppError("Invalid credentials", 400);
 
   const isMatch = await user.comparePassword(password);
-  if (!isMatch) throw new AppError("Invalid credentials", 401);
+  if (!isMatch) throw new AppError("Invalid credentials", 400);
 
   const token = generateToken(user._id);
 
