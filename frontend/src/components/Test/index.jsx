@@ -151,7 +151,7 @@ const Test = () => {
     };
 
     const response = await dispatch(submitTestAction(payload));
-console.log(updatedFinalResult,'updatedFinalResult')
+console.log(updatedFinalResult,'updatedFinalResult',response)
 
     if (response?.payload?.success) {
       setResults(updatedResults);
