@@ -50,22 +50,22 @@ const Test = () => {
   const handleCapture = (img) => {
     setCapturedImages((prev) => ({
       ...prev,
-      [currentQ?.sign_id]: img,
+      [currentQ?._id]: img,
     }));
   };
 
   const markAnswer = (isCorrect, score) => {
     setResults((prev) => {
-      const filtered = prev?.filter((r) => r?.sign_id !== currentQ?.sign_id);
+      const filtered = prev?.filter((r) => r?.sign_id !== currentQ?._id);
       return [
         ...filtered,
         {
-          sign_id: currentQ?.sign_id,
+          sign_id: currentQ?._id,
           name: currentQ?.name,
           correct: isCorrect,
           status: isCorrect ? "correct" : "incorrect",
           score,
-          capturedImage: capturedImages?.[currentQ?.sign_id],
+          capturedImage: capturedImages?.[currentQ?._id],
           referenceImg: currentQ?.image_path,
         },
       ];
@@ -73,7 +73,7 @@ const Test = () => {
   };
 
   const nextQuestion = async () => {
-    if (!currentQ || !capturedImages?.[currentQ?.sign_id]) {
+    if (!currentQ || !capturedImages?.[currentQ?._id]) {
       dispatch(notification(false, "Please capture your sign before continuing!", true));
       return;
     }
@@ -81,7 +81,7 @@ const Test = () => {
     try {
       setDetecting(true);
 
-      const capturedImg = capturedImages?.[currentQ?.sign_id];
+      const capturedImg = capturedImages?.[currentQ?._id];
       const referenceImg = currentQ?.image_path;
 
       const { isCorrect, score, error } = await analyzeSignPose(referenceImg, capturedImg);
@@ -108,12 +108,12 @@ const Test = () => {
     const updatedResults = [...results];
 
     // Include the last captured question if not analyzed yet
-    if (currentQ && capturedImages?.[currentQ?.sign_id]) {
-      const capturedImg = capturedImages?.[currentQ?.sign_id];
+    if (currentQ && capturedImages?.[currentQ?._id]) {
+      const capturedImg = capturedImages?.[currentQ?._id];
       const referenceImg = currentQ?.image_path;
       const { isCorrect, score } = await analyzeSignPose(referenceImg, capturedImg);
       updatedResults.push({
-        sign_id: currentQ?.sign_id,
+        sign_id: currentQ?._id,
         name: currentQ?.name,
         correct: isCorrect,
         status: isCorrect ? "correct" : "incorrect",
