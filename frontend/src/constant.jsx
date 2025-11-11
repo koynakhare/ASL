@@ -1,7 +1,7 @@
 export const UserApiUrl='auth'
 export const CartApiUrl='carts'
 export const LearnApiUrl='sign'
-export const TestApiUrl='tests'
+export const TestApiUrl='test'
 export const BookApiUrl='books'
 export const OrderApiUrl='orders'
 export const ResultApiUrl='result'
