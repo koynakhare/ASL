@@ -52,13 +52,10 @@
 ASL/
 
 │
-
 ├── public/ # Static assets (images, icons, manifest, etc.)
 
 │
-
 ├── src/
-
 │ ├── assets/ # Local images, svgs, fonts
 
 │ ├── components/ # Reusable UI components
@@ -84,7 +81,6 @@ ASL/
 │ └── styles/ # Global styles, theme configuration
 
 │
-
 ├── .gitignore
 
 ├── package.json
@@ -92,4 +88,3 @@ ASL/
 ├── README.md
 
 └── yarn.lock / package-lock.json
-
