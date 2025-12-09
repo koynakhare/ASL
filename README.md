@@ -49,7 +49,8 @@
 
 ## 📁 Project Structure
 
-ASLmake/
+ASL/
+
 │
 ├── public/ # Static assets (images, icons, manifest, etc.)
 │
