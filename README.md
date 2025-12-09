@@ -6,7 +6,7 @@
 
 ## 🌍 Live Application
 
-🔗 **Production:** [https://asl-ashy.vercel.app/](https://asl-ashy.vercel.app/)  
+🔗 **Production:** https://asl-delta.vercel.app/ 
 *(Frontend deployed on Vercel | Backend hosted on Render | Database on MongoDB Atlas)*
 
 ---
