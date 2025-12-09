@@ -19,14 +19,18 @@
 - **React Router DOM** — routing  
 - **Tailwind CSS** — responsive styling  
 - **Material UI (MUI)** — UI components  
-- **Framer Motion** — smooth animations  
-
+- **Framer Motion** — smooth animations
+-  
+### **MediaPipe (ASL Hand Detection)**
+- @mediapipe/hands
+- @mediapipe/camera_utils
+- @mediapipe/tasks-vision
+- 
 ### 🔧 Backend
 - **Node.js** with **Express.js** — REST API framework  
 - **MongoDB (Mongoose)** — NoSQL database  
 - **JWT Authentication** — secure login system  
-- **Multer** — file upload handling  
-- **Helmet**, **CORS**, **Morgan** — security and logging  
+- **Helmet**, **CORS**, — security and logging  
 
 ### ☁️ Deployment
 - **Frontend:** [Vercel](https://vercel.com/)  
@@ -49,42 +53,25 @@
 
 ## 📁 Project Structure
 
-ASL/
-
-│
+ASLmake/ 
+│ 
 ├── public/ # Static assets (images, icons, manifest, etc.)
-
 │
 ├── src/
 │ ├── assets/ # Local images, svgs, fonts
-
 │ ├── components/ # Reusable UI components
-
 │ ├── config/ # App configuration (routes, constants, env utils)
-
 │ ├── hooks/ # Custom React hooks
-
 │ ├── layouts/ # Layout wrappers (MainLayout, AuthLayout)
-
 │ ├── pages/ # Application pages (Home, Learn, Practice, etc.)
-
 │ ├── services/ # API services, axios configurations
-
 │ ├── store/ # Redux store, slices, actions
-
 │ ├── utils/ # Helper functions, formatters
-
 │ ├── App.js # Root component
-
 │ ├── index.js # Entry point
-
 │ └── styles/ # Global styles, theme configuration
-
 │
 ├── .gitignore
-
 ├── package.json
-
 ├── README.md
-
 └── yarn.lock / package-lock.json
