@@ -20,12 +20,12 @@
 - **Tailwind CSS** — responsive styling  
 - **Material UI (MUI)** — UI components  
 - **Framer Motion** — smooth animations
--  
+  
 ### **MediaPipe (ASL Hand Detection)**
 - @mediapipe/hands
 - @mediapipe/camera_utils
 - @mediapipe/tasks-vision
-- 
+  
 ### 🔧 Backend
 - **Node.js** with **Express.js** — REST API framework  
 - **MongoDB (Mongoose)** — NoSQL database  
