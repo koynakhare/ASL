@@ -49,25 +49,25 @@
 
 ## 📁 Project Structure
 
-ASL/
+ASL/ 
 │
-├── public/ # Static assets (images, icons, manifest, etc.)
-│
-├── src/
-│ ├── assets/ # Local images, svgs, fonts
-│ ├── components/ # Reusable UI components
-│ ├── config/ # App configuration (routes, constants, env utils)
-│ ├── hooks/ # Custom React hooks
-│ ├── layouts/ # Layout wrappers (MainLayout, AuthLayout)
-│ ├── pages/ # Application pages (Home, Learn, Practice, etc.)
-│ ├── services/ # API services, axios configurations
-│ ├── store/ # Redux store, slices, actions
-│ ├── utils/ # Helper functions, formatters
-│ ├── App.js # Root component
-│ ├── index.js # Entry point
-│ └── styles/ # Global styles, theme configuration
-│
-├── .gitignore
-├── package.json
-├── README.md
-└── yarn.lock / package-lock.json
+├── public/ # Static assets (images, icons, manifest, etc.) 
+│ 
+├── src/ 
+│ ├── assets/ # Local images, svgs, fonts 
+│ ├── components/ # Reusable UI components 
+│ ├── config/ # App configuration (routes, constants, env utils) 
+│ ├── hooks/ # Custom React hooks 
+│ ├── layouts/ # Layout wrappers (MainLayout, AuthLayout) 
+│ ├── pages/ # Application pages (Home, Learn, Practice, etc.) 
+│ ├── services/ # API services, axios configurations 
+│ ├── store/ # Redux store, slices, actions 
+│ ├── utils/ # Helper functions, formatters 
+│ ├── App.js # Root component 
+│ ├── index.js # Entry point 
+│ └── styles/ # Global styles, theme configuration 
+│ 
+├── .gitignore 
+├── package.json 
+├── README.md 
+└── yarn.lock / package-lock.json 
