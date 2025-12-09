@@ -53,25 +53,27 @@
 
 ## 📁 Project Structure
 
-ASLmake/ 
-│ 
-├── public/ # Static assets (images, icons, manifest, etc.)
+```text
+ASL/
+│
+├── public/                 # Static assets (images, icons, manifest, etc.)
 │
 ├── src/
-│ ├── assets/ # Local images, svgs, fonts
-│ ├── components/ # Reusable UI components
-│ ├── config/ # App configuration (routes, constants, env utils)
-│ ├── hooks/ # Custom React hooks
-│ ├── layouts/ # Layout wrappers (MainLayout, AuthLayout)
-│ ├── pages/ # Application pages (Home, Learn, Practice, etc.)
-│ ├── services/ # API services, axios configurations
-│ ├── store/ # Redux store, slices, actions
-│ ├── utils/ # Helper functions, formatters
-│ ├── App.js # Root component
-│ ├── index.js # Entry point
-│ └── styles/ # Global styles, theme configuration
+│   ├── assets/             # Local images, svgs, fonts
+│   ├── components/         # Reusable UI components
+│   ├── config/             # Routes, constants, env utils
+│   ├── hooks/              # Custom React hooks
+│   ├── layouts/            # MainLayout, AuthLayout
+│   ├── pages/              # Home, Learn, Practice, etc.
+│   ├── services/           # API services, axios configs
+│   ├── store/              # Redux store, slices
+│   ├── utils/              # Helper functions, formatters
+│   ├── App.js              # Root component
+│   ├── main.jsx / index.js # Entry file (Vite)
+│   └── styles/             # Global theme + Tailwind setup
 │
 ├── .gitignore
 ├── package.json
 ├── README.md
 └── yarn.lock / package-lock.json
+```
